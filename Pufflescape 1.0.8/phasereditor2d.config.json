@@ -1,0 +1,4 @@
+{
+    "plugins": ["./lib/box2d-plugin-full.js"],
+    "skip": []
+}

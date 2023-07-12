@@ -178,8 +178,6 @@
             "components": [],
             "x": 201,
             "y": 475,
-            "originX": 0,
-            "originY": 0,
             "text": "Level1",
             "fontSize": "36px",
             "color": "#0c57a9ff",
@@ -241,7 +239,7 @@
             "PointerHandler.texOver": "buttonW1Top2.png",
             "PointerHandler.texOut": "buttonW1Top1.png",
             "PointerHandler.texOn": "buttonW1Top3.png",
-            "goToLevel.sceneKey": "Level2",
+            "goToLevel.sceneKey": "Flash",
             "texture": {
                 "key": "buttons",
                 "frame": "buttonW1Top1.png"
@@ -256,8 +254,6 @@
             "components": [],
             "x": 509,
             "y": 475,
-            "originX": 0,
-            "originY": 0,
             "text": "Level2",
             "fontSize": "36px",
             "color": "#0c57a9ff",
@@ -271,8 +267,6 @@
             "components": [],
             "x": -528,
             "y": 276,
-            "originX": 0,
-            "originY": 0,
             "text": "emotional support dino",
             "fontSize": "30px"
         }
@@ -282,6 +276,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 2
+        "version": 3
     }
 }

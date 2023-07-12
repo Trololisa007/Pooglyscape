@@ -48,6 +48,11 @@
                 "key": "bling"
             },
             {
+                "url": "assets/scenes/w1/Box2D.js",
+                "type": "sceneFile",
+                "key": "Box2D"
+            },
+            {
                 "type": "multiatlas",
                 "url": "assets/atlas/buttons.json",
                 "path": "assets/atlas",
@@ -116,6 +121,11 @@
                 "url": "assets/images/finish.png",
                 "type": "image",
                 "key": "finish"
+            },
+            {
+                "url": "assets/scenes/w1/FlashPhysics.js",
+                "type": "sceneFile",
+                "key": "FlashPhysics"
             },
             {
                 "url": "assets/images/foreground2.png",

@@ -306,6 +306,7 @@ class Level1 extends Phaser.Scene {
 	// Write your code here
 
 	create() {
+		// this.matter.world.runner.deltaMax = 1000/60;
 		this.anims.resumeAll();
 		this.sound.setVolume(1);
 		const col = this.cache.json.get('collision1');
@@ -315,7 +316,9 @@ class Level1 extends Phaser.Scene {
 		ball.setScale(scale);
 		ball.body.restitution = 0;
 		ball.depth = 3;
-
+		this.matter.set60Hz();
+		//this.matter.world.engine.timing.timeScale = .75;
+		console.log(this.matter.world.engine.timing);
 		this.editorCreate();
 		//this.endUIFinal.update();
 		//var mask = this.hintMask.createBitmapMask();
@@ -460,9 +463,18 @@ class Level1 extends Phaser.Scene {
 		if (ball.body.angularVelocity > maxAngularVelocity || ball.body.angularVelocity < -maxAngularVelocity || null) {
 			ball.setAngularVelocity(ball.body.angularVelocity / Math.abs(ball.body.angularVelocity) * maxAngularVelocity)
 		}
+		
+
+
+
+
 
 
 		//worst possible way of catching collision status for movement on specific objects
+		if (this.input.keyboard.addKey('UP').isDown) {
+			this.matter.applyForceFromPosition(ball, {x: ball.body.x, y: ball.body.y - 2},{x: .001, y: 0});
+			console.log(ball.body)
+		}
 		if (this.input.keyboard.addKey('LEFT').isDown) {
 			if (ball.body.velocity.x >= 7) {
 				ball.setAngularVelocity(ball.body.angularVelocity - .007)

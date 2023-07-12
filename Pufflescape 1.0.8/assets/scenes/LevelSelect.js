@@ -59,7 +59,7 @@ class LevelSelect extends Phaser.Scene {
 		// text
 		const text = this.add.text(201, 475, "", {});
 		text.text = "Level1";
-		text.setStyle({"color":"#0c57a9ff","fontSize":"36px","stroke":"#0c57a9ff","strokeThickness":4});
+		text.setStyle({ "color": "#0c57a9ff", "fontSize": "36px", "stroke": "#0c57a9ff", "strokeThickness":4});
 
 		// pufflescape_Logo
 		const pufflescape_Logo = this.add.image(760, 152, "Pufflescape_Logo");
@@ -78,12 +78,12 @@ class LevelSelect extends Phaser.Scene {
 		// text_2
 		const text_2 = this.add.text(509, 475, "", {});
 		text_2.text = "Level2";
-		text_2.setStyle({"color":"#0c57a9ff","fontSize":"36px","stroke":"#0c57a9ff","strokeThickness":4});
+		text_2.setStyle({ "color": "#0c57a9ff", "fontSize": "36px", "stroke": "#0c57a9ff", "strokeThickness":4});
 
 		// text_3
 		const text_3 = this.add.text(-528, 276, "", {});
 		text_3.text = "emotional support dino";
-		text_3.setStyle({"fontSize":"30px"});
+		text_3.setStyle({ "fontSize": "30px" });
 
 		// buttonW1Top1_png (components)
 		new InteractiveObject(buttonW1Top1_png);
@@ -108,7 +108,7 @@ class LevelSelect extends Phaser.Scene {
 		buttonW1Top1_png_1PointerHandler.texOut = "buttonW1Top1.png";
 		buttonW1Top1_png_1PointerHandler.texOn = "buttonW1Top3.png";
 		const buttonW1Top1_png_1goToLevel = new goToLevel(buttonW1Top1_png_1);
-		buttonW1Top1_png_1goToLevel.sceneKey = "Level2";
+		buttonW1Top1_png_1goToLevel.sceneKey = "Flash";
 
 		this.events.emit("scene-awake");
 	}
@@ -120,7 +120,7 @@ class LevelSelect extends Phaser.Scene {
 	create() {
 		this.scene.scene.sound.setVolume(1);
 		this.editorCreate();
-		
+
 	}
 
 	/* END-USER-CODE */
