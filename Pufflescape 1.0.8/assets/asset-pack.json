@@ -94,6 +94,13 @@
                 "key": "components"
             },
             {
+                "url": [
+                    "assets/prefabs/devInfo.js"
+                ],
+                "type": "scripts",
+                "key": "devInfo"
+            },
+            {
                 "url": "assets/dino.png",
                 "type": "image",
                 "key": "dino"

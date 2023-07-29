@@ -6,29 +6,24 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-class SceneConfigOptions extends UserComponent {
+class Component {
 
 	constructor(gameObject) {
-		super(gameObject);
 
 		/** @type {Phaser.GameObjects.Image} */
 		this.gameObject;
-		/** @type {number} */
-		this.scale = 0;
-
 
 		this.gameObject = gameObject;
-		gameObject["__SceneConfigOptions"] = this;
+		gameObject["__Component"] = this;
 
 		/* START-USER-CTR-CODE */
-		this.scene.scale = this.scale;
-		this.scene.maxVelocity = 17 * this.scene.scale;
+		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
-	/** @returns {SceneConfigOptions} */
+	/** @returns {Component} */
 	static getComponent(gameObject) {
-		return gameObject["__SceneConfigOptions"];
+		return gameObject["__Component"];
 	}
 
 

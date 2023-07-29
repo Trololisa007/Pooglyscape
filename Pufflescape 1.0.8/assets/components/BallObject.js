@@ -3,6 +3,9 @@
 
 /* START OF COMPILED CODE */
 
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
+
 class BallObject extends UserComponent {
 
 	constructor(gameObject) {

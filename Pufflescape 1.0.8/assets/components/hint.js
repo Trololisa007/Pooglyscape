@@ -3,6 +3,9 @@
 
 /* START OF COMPILED CODE */
 
+/* START-USER-IMPORTS */
+/* END-USER-IMPORTS */
+
 class hint extends UserComponent {
 
 	constructor(gameObject) {

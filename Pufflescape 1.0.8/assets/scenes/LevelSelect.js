@@ -85,6 +85,26 @@ class LevelSelect extends Phaser.Scene {
 		text_3.text = "emotional support dino";
 		text_3.setStyle({ "fontSize": "30px" });
 
+		// rectangle_1
+		const rectangle_1 = this.add.rectangle(1080, 628, 128, 128);
+		rectangle_1.scaleX = 4.184693235246191;
+		rectangle_1.scaleY = 3.1809334222994043;
+		rectangle_1.isFilled = true;
+
+		// textdev1
+		const textdev1 = this.add.text(843, 712, "", {});
+		textdev1.scaleX = 0.979546298733702;
+		textdev1.text = "P.S.   For some reason the refresh rate of your monitor is tied to how fast the physics engine runs, so expect extra speed when playing on a screen with more than a 60hz refresh rate";
+		textdev1.setStyle({ "color": "#000000ff", "fontSize": "20px", "stroke": "#000000ff" });
+		textdev1.setWordWrapWidth(500, true);
+
+		// textdev
+		const textdev = this.add.text(845, 464, "", {});
+		textdev.scaleX = 0.979546298733702;
+		textdev.text = "THIS IS AN UNFINISHED BUILD\n\nThe native physics engine (MatterJS) is unable to accurately create circles, resulting in the circles having small vertices around the surface.  when rotating, the vertices make the circle bounce.\n\nI don't think there is a way around this issue, so I would most likely need to find a new physics engine in order to continue working on the project.";
+		textdev.setStyle({ "color": "#000000ff", "fontSize": "20px", "stroke": "#000000ff" });
+		textdev.setWordWrapWidth(500, true);
+
 		// buttonW1Top1_png (components)
 		new InteractiveObject(buttonW1Top1_png);
 		const buttonW1Top1_pngPointerHandler = new PointerHandler(buttonW1Top1_png);
@@ -110,8 +130,19 @@ class LevelSelect extends Phaser.Scene {
 		const buttonW1Top1_png_1goToLevel = new goToLevel(buttonW1Top1_png_1);
 		buttonW1Top1_png_1goToLevel.sceneKey = "Flash";
 
+		this.rectangle_1 = rectangle_1;
+		this.textdev1 = textdev1;
+		this.textdev = textdev;
+
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {Phaser.GameObjects.Rectangle} */
+	rectangle_1;
+	/** @type {Phaser.GameObjects.Text} */
+	textdev1;
+	/** @type {Phaser.GameObjects.Text} */
+	textdev;
 
 	/* START-USER-CODE */
 
@@ -120,7 +151,13 @@ class LevelSelect extends Phaser.Scene {
 	create() {
 		this.scene.scene.sound.setVolume(1);
 		this.editorCreate();
-
+		this.rectangle_1.on("pointerup", () => {
+			print("works")
+			this.rectangle_1.setVisible(false)
+			this.textdev.setVisible(false)
+			this.textdev1.setVisible(false)
+			this.close1_png_1.setVisible(false)
+		});
 	}
 
 	/* END-USER-CODE */

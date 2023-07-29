@@ -1,0 +1,90 @@
+{
+    "id": "ce79bace-9577-4d66-8215-8d61843cfcf5",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "31881f1c-f4c1-47f4-9898-176603d95a36",
+            "label": "container_1",
+            "components": [],
+            "x": 2,
+            "y": -25,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "fd565507-677c-4fe6-b0d6-cb77288d5175",
+                    "label": "rectangle_1",
+                    "components": [],
+                    "y": 24,
+                    "scaleX": 4.184693235246191,
+                    "scaleY": 3.1809334222994043,
+                    "isFilled": true,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Text",
+                    "id": "a394690c-61e7-463d-bd25-95fc7994e148",
+                    "label": "text_1",
+                    "components": [],
+                    "x": -235,
+                    "y": -140,
+                    "scaleX": 0.979546298733702,
+                    "text": "THIS IS AN UNFINISHED BUILD\n\nThe native physics engine (MatterJS) is unable to accurately create circles, resulting in the circles having small vertices around the surface.  when rotating, the vertices make the circle bounce.\n\nI don't think there is a way around this issue, so I would most likely need to find a new physics engine in order to continue working on the project.",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "stroke": "#000000ff",
+                    "wordWrapWidth": 500,
+                    "wordWrapUseAdvanced": true
+                },
+                {
+                    "type": "Text",
+                    "id": "984ab858-8918-4695-a63c-ea24ae6c7bb7",
+                    "label": "text",
+                    "components": [],
+                    "x": -237,
+                    "y": 108,
+                    "scaleX": 0.979546298733702,
+                    "text": "P.S.   For some reason the refresh rate of your monitor is tied to how fast the physics engine runs, so expect extra speed when playing on a screen with more than a 60hz refresh rate",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "stroke": "#000000ff",
+                    "wordWrapWidth": 500,
+                    "wordWrapUseAdvanced": true
+                },
+                {
+                    "type": "Image",
+                    "id": "5c831faa-547d-4c2d-acb3-83680590c3fd",
+                    "label": "close1_png",
+                    "components": [
+                        "PointerHandler",
+                        "InteractiveObject"
+                    ],
+                    "PointerHandler.texOver": "close2.png",
+                    "PointerHandler.texOut": "close1.png",
+                    "PointerHandler.texOn": "close3.png",
+                    "texture": {
+                        "key": "buttons",
+                        "frame": "close1.png"
+                    },
+                    "x": 229,
+                    "y": -145
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
