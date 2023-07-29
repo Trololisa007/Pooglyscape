@@ -1,7 +1,7 @@
 
 
 //debug drag
-var dragEnable = true;
+var dragEnable = false;
 globalThis.color = 'purple';
 
 window.addEventListener('load', function () {
@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
 		physics: {
 			default: "matter",
 			matter: {
-				debug: {showVelocity: true, enabled: true},
+				debug: {showVelocity: true, enabled: false},
 				gravity: {x: 0, y: 3},
 				runner: {isFixed: true, deltaMax: 1000/60},
 				enableSleeping: false,
