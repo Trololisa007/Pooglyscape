@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
 		physics: {
 			default: "matter",
 			matter: {
-				debug: {showVelocity: false, enabled: false},
+				//debug: {showVelocity: false, enabled: false},
 				gravity: {x: 0, y: 3},
 				runner: {isFixed: true, deltaMax: 1000/60},
 				enableSleeping: false,
